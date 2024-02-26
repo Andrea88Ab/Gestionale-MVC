@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Aggiungi Dipendente";
+}
+
+<div class="container mt-5">
+    <!-- Aggiunge un margine superiore -->
+    <div class="row">
+        <div class="col text-center">
+            <!-- Centra il testo orizzontalmente -->
+            <h1>@ViewData["Title"]</h1>
+        </div>
+    </div>
+</div>
+
+<div class="row h-100 justify-content-center align-items-center">
+    <div class="col-md-6 ml-3">
+        
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <label for="cognome">Cognome</label>
+                <input type="text" class="form-control" id="cognome" placeholder="Cognome">
+            </div>
+            <div class="form-group">
+                <label for="indirizzo">Indirizzo</label>
+                <input type="text" class="form-control" id="indirizzo" placeholder="Indirizzo">
+            </div>
+            <div class="form-group">
+                <label for="codiceFiscale">Codice Fiscale</label>
+                <input type="text" class="form-control" id="codiceFiscale" placeholder="Codice Fiscale">
+            </div>
+            <div class="form-group">
+                <label for="statoCivile">Stato Civile</label>
+                <select class="form-control" id="statoCivile">
+                    <option>Coniugato/a</option>
+                    <option>Single</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numeroFigli">Numero di Figli a Carico</label>
+                <input type="number" class="form-control" id="numeroFigli" placeholder="Numero di Figli a Carico">
+            </div>
+            <div class="form-group">
+                <label for="mansione">Mansione</label>
+                <input type="text" class="form-control" id="mansione" placeholder="Mansione">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 mr-2">Invia</button> <!-- Aggiunti mb-2 e mr-2 per i margini -->
+        </form>
+    </div>
+</div>
